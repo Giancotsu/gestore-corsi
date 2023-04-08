@@ -1,5 +1,6 @@
 package com.example.gestorecorsi;
 
+import com.example.gestorecorsi.model.Model;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -13,6 +14,11 @@ public class EntryPoint extends javafx.application.Application{
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("main.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Gestore Corsi!");
+
+        Model model = new Model();
+        MainController controller = fxmlLoader.getController();
+        controller.setModel(model);
+
         stage.setScene(scene);
         stage.show();
     }
