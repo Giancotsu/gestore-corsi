@@ -11,4 +11,8 @@ public class MainController {
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
+    public void corsiPerPeriodo(){}
+    public void numeroStudenti(){}
+    public void stampaStudenti(){}
+    public void stampaDivisione(){}
 }
