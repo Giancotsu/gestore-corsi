@@ -1,6 +1,7 @@
 package com.example.gestorecorsi;
 
 import com.example.gestorecorsi.model.Model;
+import com.example.gestorecorsi.test.TestCorsoDAO;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -25,5 +26,7 @@ public class EntryPoint extends javafx.application.Application{
 
     public static void run(String[] args) {
         launch();
+
+        TestCorsoDAO.getCorsoByPd();
     }
 }
